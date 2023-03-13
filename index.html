@@ -9,6 +9,7 @@
         position: flex;
         background-image: url(windows95bkg.png);
         background-size: cover;
+        overflow: hidden;
       }
 
       h1 {
@@ -33,6 +34,7 @@
     <h1>
       skylar liu's webpage
     </h1>
+    
     <div class="cows">
       <img style="left: 15%; bottom: 60%;" src="cow1.png" alt="cow button">
       <img style="left: 55%; bottom: 40%;" src="cow2.png" alt="cow button">
@@ -40,6 +42,7 @@
       <img style="left: 85%; bottom: 30%;" src="cow5.png" alt="cow button">
 
     </div>
+    <div class="hay"></div>
     <div class="window" style="margin: 32px; width: 250px">
       <div class="title-bar">
         <div class="title-bar-text">
@@ -51,6 +54,11 @@
       </div>
     </div>
     <!-- 	<canvas id="canvas" width="600" height="400"></canvas> -->
-    <script></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js">
+    	new rainbowCursor();
+			// window.addEventListener("load", (event) => {
+			// new cursoreffects.ghostCursor();
+			// });
+    </script>
   </body>
 </html>
